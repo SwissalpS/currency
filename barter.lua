@@ -120,8 +120,8 @@ minetest.register_node("currency:barter", {
 		meta:set_string("pl2","")
 		barter.chest.update_formspec(meta)
 		local inv = meta:get_inventory()
-		inv:set_size("pl1", 3*4)
-		inv:set_size("pl2", 3*4)
+		inv:set_size("pl1", 12) -- 3*4
+		inv:set_size("pl2", 12) -- 3*4
 	end,
 	on_receive_fields = function(pos, formname, fields, sender)
 		local meta = minetest.get_meta(pos)
