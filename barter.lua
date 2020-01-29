@@ -93,7 +93,7 @@ barter.chest.exchange = function(meta)
 end
 
 minetest.register_node("currency:barter", {
-		drawtype = "nodebox",
+	drawtype = "nodebox",
 	description = S("Barter Table"),
 	paramtype = "light",
 	paramtype2 = "facedir",
